@@ -48,24 +48,22 @@ function getRandomQuote(arr) {
   return quotes[ranInd];
 }
 
-let message = getRandomQuote(quotes)
-
-console.log(message);
-
 
 /***
  * `printQuote` function
 ***/
 
 
-function printQuote() {
-  document.querySelector('p').innerHTML = `<div class="container">
-  <div id="quote-box" class="quote-box">
-    <p class="quote">${message.quote}</p>
-    <p class="source">${message.source}<span class="citation">${message.citation}</span><span class="year">${message.year}</span></p>
-  </div>
-</div>`;
+function printQuote(getRandomQuote(quotes)) {
+
 }
+
+/*
+document.querySelector('container').innerHTML = `<div id="quote-box" class="quote-box">
+<p class="quote">${quotes.quote}</p>
+<p class="source">${quotes.source}<span class="citation">${quotes.citation}</span><span class="year">${quotes.year}</span></p>
+</div>`;
+*/
 
 
 /***
