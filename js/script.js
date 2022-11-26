@@ -44,38 +44,28 @@ let quotes = [
 ***/
 
 function getRandomQuote(arr) {
-  let ranQuoIndx = Math.floor(Math.random() * arr.length);
-  let items = '';
-  for ( let i=0; i<4; i++) {
-    <h2>${arr[i].name}</h2>
-<h3>${arr[i].type} | ${arr[i].breed}</h3>
-<p>Age: ${arr[i].age}</p>
-<img src="${arr[i].photo}" alt="${arr[i].breed}">`
-    quotes[ranQuoIndx]
-
-    }
-    
+  let ranInd = Math.floor(Math.random() * arr.length);
+  return quotes[ranInd];
 }
 
+let message = getRandomQuote(quotes)
 
-function createListItems (arr) {
-  let items = '';
-  for (let i = 0; i < arr.length; i++) {
-    items += `<h2>${arr[i].name}</h2>
-<h3>${arr[i].type} | ${arr[i].breed}</h3>
-<p>Age: ${arr[i].age}</p>
-<img src="${arr[i].photo}" alt="${arr[i].breed}">`;
-  };
-  return items;
-};
-
-
+console.log(message);
 
 
 /***
  * `printQuote` function
 ***/
 
+
+function printQuote() {
+  document.querySelector('p').innerHTML = `<div class="container">
+  <div id="quote-box" class="quote-box">
+    <p class="quote">${message.quote}</p>
+    <p class="source">${message.source}<span class="citation">${message.citation}</span><span class="year">${message.year}</span></p>
+  </div>
+</div>`;
+}
 
 
 /***
