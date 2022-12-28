@@ -62,19 +62,14 @@ function printQuote() {
   let stringTemp = `<p class="quotes">${ranQuote.quote}</p> 
   <p class="source">${ranQuote.source}
   `;
-  stringTemp += `<span class="citation">${ranQuote.citation}</span>`;
   if('citation' in ranQuote === true ) {
     stringTemp +=  `<span class="citation">${ranQuote.citation}</span>`;
   };
-  stringTemp += `</p>`;
-  console.log(stringTemp);
-
-/*  
-  if(selectQuote.property('year')) {
-    stringTemp += `<span class="year">${selectQuote.year}</span>`;
+  if('year' in ranQuote === true ) {
+    stringTemp += `<span class="year">${ranQuote.year}</span>`;
   };
   stringTemp += `</p>`;
-*/
+  console.log(stringTemp);
 }
 
 printQuote();
