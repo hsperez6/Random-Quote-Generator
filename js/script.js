@@ -58,19 +58,26 @@ function getRandomQuote(arr) {
  * `printQuote` function
 ***/
 function printQuote() {
-  let selectQuote = getRandomQuote(quotes);
-  let stringTemp = `<p class="quote">${selectQuote.quote}</p> 
-  <p class="source">selectQuote.source</p>`;
-  if(selectQuote.property('citation')) {
-    stringTemp +=  `<span class="citation">${selectQuote.citation}</span>`;
+  let ranQuote = getRandomQuote(quotes);
+  let stringTemp = `<p class="quotes">${ranQuote.quote}</p> 
+  <p class="source">${ranQuote.source}
+  `;
+  stringTemp += `<span class="citation">${ranQuote.citation}</span>`;
+  if('citation' in ranQuote === true ) {
+    stringTemp +=  `<span class="citation">${ranQuote.citation}</span>`;
   };
+  stringTemp += `</p>`;
+  console.log(stringTemp);
+
+/*  
   if(selectQuote.property('year')) {
     stringTemp += `<span class="year">${selectQuote.year}</span>`;
   };
   stringTemp += `</p>`;
+*/
 }
 
-printQuote()
+printQuote();
 
 
 /*
