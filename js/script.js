@@ -63,10 +63,10 @@ function printQuote() {
   let stringTemp = `<p class="quote">${selectQuote.quote}</p>
  <p class="source">${selectQuote.source}`;
   if(selectQuote.citation !== null) {
-    stringTemp += `<span class="citation">${selectQuote[citation]}</span>`;
+    stringTemp += `<span class="citation">${selectQuote.citation}</span>`;
   };
   if(selectQuote.year !== null) {
-    stringTemp += `<span class="year">${selectQuote[year]}</span>`;
+    stringTemp += `<span class="year">${selectQuote.year}</span>`;
   };
   stringTemp += `</p>`;
 }
