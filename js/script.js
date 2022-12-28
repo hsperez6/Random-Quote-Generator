@@ -60,12 +60,13 @@ function getRandomQuote(arr) {
 ***/
 function printQuote() {
   let selectQuote = getRandomQuote(quotes);
-  let stringTemp = `<p class="quote">${selectQuote.quote}</p>
+  let stringTemp;
+  stringTemp += `<p class="quote">${selectQuote.quote}</p>
  <p class="source">${selectQuote.source}`;
-  if(selectQuote.hasOwnProperty('citation')) {
+  if(selectQuote.includes('citation')) {
     stringTemp += `<span class="citation">${selectQuote.citation}</span>`;
   };
-  if(selectQuote.hasOwnProperty('year')) {
+  if(selectQuote.includes('year')) {
     stringTemp += `<span class="year">${selectQuote.year}</span>`;
   };
   stringTemp += `</p>`;
