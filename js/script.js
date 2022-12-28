@@ -71,7 +71,7 @@ function printQuote() {
   stringTemp += `</p>`;
 }
 
-printQuote()
+console.log(printQuote());
 
 
 /*
