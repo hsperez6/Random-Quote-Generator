@@ -42,8 +42,9 @@ let quotes = [
         citation: 'Forrest Gump',
         year: 1994
       }
-      ];
+];
 
+console.log(quotes)      
 
 /***
  * `getRandomQuote` function
@@ -59,10 +60,12 @@ function getRandomQuote(arr) {
  * `printQuote` function
 ***/
 
-
+/***
 function printQuote(getRandomQuote(quotes)) {
 
 }
+***/
+
 
 /*
 document.querySelector('container').innerHTML = `<div id="quote-box" class="quote-box">
