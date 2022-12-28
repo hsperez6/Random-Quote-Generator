@@ -69,7 +69,7 @@ function printQuote() {
     stringTemp += `<span class="year">${ranQuote.year}</span>`;
   };
   stringTemp += `</p>`;
-  console.log(stringTemp);
+  document.getElementById('quote-box').innerHTML = stringTemp;
 }
 
 printQuote();
