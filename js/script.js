@@ -60,11 +60,11 @@ function getRandomQuote(arr) {
 ***/
 function printQuote() {
   let selectQuote = getRandomQuote(quotes);
-  console.log(selectQuote.quote);
-
-/*  let stringTemp = `<p class="quote">${selectQuote.quote}</p>
+  let stringTemp = `<p class="quote">${selectQuote.quote}</p>
  <p class="source">${selectQuote.source}`;
-  if(selectQuote.citation !== null) {
+  console.log(stringTemp);
+
+/* if(selectQuote.citation !== null) {
     stringTemp += `<span class="citation">${selectQuote.citation}</span>`;
   };
   if(selectQuote.year !== null) {
