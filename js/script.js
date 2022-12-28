@@ -51,11 +51,11 @@ let quotes = [
 
 function getRandomQuote(arr) {
   let ranInd = Math.floor(Math.random() * arr.length);
-  return arr[ranInd];
+  console.log(ranInd);
+  console.log(arr[ranInd]);
 }
 
-console.log(getRandomQuote(quotes));
-
+getRandomQuote(quotes);
 
 /***
  * `printQuote` function
