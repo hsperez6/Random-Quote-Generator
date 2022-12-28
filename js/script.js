@@ -54,6 +54,8 @@ function getRandomQuote(arr) {
   return arr[ranInd];
 }
 
+console.log(getRandomQuote(quotes));
+
 
 /***
  * `printQuote` function
