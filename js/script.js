@@ -35,6 +35,12 @@ let quotes = [
         source: 'Bruce Lee',
         citation: '',
         year: 1983
+      },
+      {
+        quote: '“My mama always said life was like a box of chocolates.',
+        source: 'Forrest Gump',
+        citation: 'Forrest Gump',
+        year: 1994
       }
       ];
 
