@@ -60,7 +60,9 @@ function getRandomQuote(arr) {
 ***/
 function printQuote() {
   let selectQuote = getRandomQuote(quotes);
-  let stringTemp = `<p class="quote">${selectQuote.quote}</p>
+  console.log(selectQuote.quote);
+
+/*  let stringTemp = `<p class="quote">${selectQuote.quote}</p>
  <p class="source">${selectQuote.source}`;
   if(selectQuote.citation !== null) {
     stringTemp += `<span class="citation">${selectQuote.citation}</span>`;
@@ -69,9 +71,12 @@ function printQuote() {
     stringTemp += `<span class="year">${selectQuote.year}</span>`;
   };
   stringTemp += `</p>`;
+*/
 }
 
-console.log(printQuote());
+printQuote()
+
+
 /*
 document.querySelector('container').innerHTML = `<div id="quote-box" class="quote-box">
 <p class="quote">${quotes.quote}</p>
