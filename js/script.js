@@ -33,7 +33,6 @@ let quotes = [
       {
         quote: 'If you spend too much time thinking about a thing, you\'ll never get it done',
         source: 'Bruce Lee',
-        citation: '',
         year: 1983
       },
       {
@@ -63,10 +62,10 @@ function printQuote() {
   let stringTemp;
   stringTemp += `<p class="quote">${selectQuote.quote}</p>
  <p class="source">${selectQuote.source}`;
-  if(selectQuote.includes('citation')) {
+  if(selectQuote.citation) {
     stringTemp += `<span class="citation">${selectQuote.citation}</span>`;
   };
-  if(selectQuote.includes('year')) {
+  if(selectQuote.year) {
     stringTemp += `<span class="year">${selectQuote.year}</span>`;
   };
   stringTemp += `</p>`;
