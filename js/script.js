@@ -62,10 +62,10 @@ function printQuote() {
   let selectQuote = getRandomQuote(quotes);
   let stringTemp = `<p class="quote">${selectQuote.quote}</p>
  <p class="source">${selectQuote.source}`;
-  if(selectQuote.hasOwnProperty(citation)) {
+  if(selectQuote.hasOwnProperty('citation')) {
     stringTemp += `<span class="citation">${selectQuote.citation}</span>`;
   };
-  if(selectQuote.hasOwnProperty(year)) {
+  if(selectQuote.hasOwnProperty('year')) {
     stringTemp += `<span class="year">${selectQuote.year}</span>`;
   };
   stringTemp += `</p>`;
