@@ -44,7 +44,6 @@ let quotes = [
       }
 ];
 
-console.log(quotes)      
 
 /***
  * `getRandomQuote` function
@@ -52,7 +51,7 @@ console.log(quotes)
 
 function getRandomQuote(arr) {
   let ranInd = Math.floor(Math.random() * arr.length);
-  return quotes[ranInd];
+  return arr[ranInd];
 }
 
 
