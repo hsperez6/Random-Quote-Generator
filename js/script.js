@@ -114,7 +114,7 @@ function printQuote() {
     stringTemp +=  `<span class="citation">${ranQuote.citation}</span>`;
   };
   if('year' in ranQuote) {
-    stringTemp += `<span class="year">${ranQuote.year}</span>`;
+    stringTemp += `<span class="year">${ranQuote.year}</span> `;
   };
   if('tag' in ranQuote) {
     stringTemp += `<span>${ranQuote.tag}</span>`;
