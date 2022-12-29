@@ -40,7 +40,23 @@ let quotes = [
         source: 'Forrest Gump',
         citation: 'Forrest Gump',
         year: 1994
-      }
+      }, 
+      {
+        quote: 'He that would live in peace & ease, must not speak all he knows or judge all he sees.',
+        source: 'Benjamin Franklin',
+        citation: 'Poor Richard\'s Almanac',
+        year: 1736
+      },
+      {
+        quote: 'No man has a good enough memory to be a successful liar.',
+        source: 'Abraham Lincoln'
+      }, 
+      {
+        quote: '"Stay hungry, stay foolish."',
+        source: 'Steve Jobs',
+        citation: 'Stanford University commencement address',
+        year: 2005
+      }, 
 ];
 
 
