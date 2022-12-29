@@ -59,13 +59,13 @@ function getRandomQuote(arr) {
 ***/
 function printQuote() {
   let ranQuote = getRandomQuote(quotes);
-  let stringTemp = `<p class="quotes">${ranQuote.quote}</p> 
+  let stringTemp = `<p class="quote">${ranQuote.quote}</p> 
   <p class="source">${ranQuote.source}
   `;
-  if('citation' in ranQuote === true ) {
+  if('citation' in ranQuote) {
     stringTemp +=  `<span class="citation">${ranQuote.citation}</span>`;
   };
-  if('year' in ranQuote === true ) {
+  if('year' in ranQuote) {
     stringTemp += `<span class="year">${ranQuote.year}</span>`;
   };
   stringTemp += `</p>`;
