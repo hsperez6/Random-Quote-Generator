@@ -127,7 +127,7 @@ function printQuote() {
 /***
  * call printQuote() function 
 ***/
-printQuote();
+setinterval(printQuote(), 500);
 
 /***
  * click event listener for the print quote button
