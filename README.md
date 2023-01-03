@@ -1,18 +1,18 @@
 # Tech-Degree-Project-1--Random-Quote-Generator
 Random Quote Generator
 
-`quotes` array
+quotes array
 In this project, I first created an array of objects and saved it to a variable called quotes. 
 Each object contains several properties, including quote, source, citation, year, and tag.
 
-`getRandomQuote` function
+getRandomQuote function
 Secondly, I created a function called getRandomQuote() to randomly select one of the objects within
 the quotes array. The getRandomQuote() function first generates a random index by multiplying
 a random number between 0 and 1 (Math.random()) and multiplying it by length of the quotes array.
 Next, I converted the result into an integer using Math.floor() and saved it to a variable ranInd. 
 Finally, I instructed function to return object located in the ranInd index. 
 
-`printQuote` function
+printQuote function
 Thirdly, I created a printQuote() function to generate a string using the quote selected by the
 getRandomQuote() function. To do so, I first saved the quote object selected by the getRandomQuote()
 function into a variable ranQuote. Second, I began a string using string interpolation, with <p> 
@@ -30,9 +30,9 @@ additional strings were concatenated to the string stored in the stringTemp vari
 containing the year property was added, the string was nested between <span> tags including a class "year".
 If the properties were not present, no additional strings were added. 
 
-Next, the closing </p> tag is concatenated to the string in stringTemp. Lastly, I inserted the string in the stringTemp variable into the element labeled `quote-box` using
-.getElementById().innerHTML and closed the printQuote() function.
-
+Next, the closing </p> tag is concatenated to the string in stringTemp. Lastly, I inserted the string in 
+the stringTemp variable into the element labeled `quote-box` using .getElementById().innerHTML and 
+closed the printQuote() function.
 
 Next, I called the printQuote() function. 
 
