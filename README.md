@@ -18,22 +18,22 @@ printQuote function
 
 I created a printQuote() function to generate a string using the quote selected by the
 getRandomQuote() function. To do so, I first saved the quote object selected by the getRandomQuote()
-function into a variable ranQuote. Then, I began a string using string interpolation, with <p> 
+function into a variable ranQuote. Then, I began a string using string interpolation, with \<p> 
 tags including a class attribute, and stored this initial string into a new variable stringTemp,
-intentionally leaving out the closing </p> tag. Next, I used a conditional statement to check if a 
+intentionally leaving out the closing \</p> tag. Next, I used a conditional statement to check if a 
 citation property exists within the quote object stored in ranQuote. If a citation property exists, 
-an additional string (using string interpolation and nested between <span> tags with class attribute 
+an additional string (using string interpolation and nested between \<span> tags with class attribute 
 "citation") with the value in the citation property is concatenated to the string stored in the 
 stringTemp variable.
 
 I repeated this last step two more times, using a conditional statement to check whether "year" and "tag"
 properties exist in the quote object stored in the ranQuote variable. If the properties exist,
 additional strings were concatenated to the string stored in the stringTemp variable. If a string 
-containing the "year" property was added, the string was nested between <span> tags including a class 
+containing the "year" property was added, the string was nested between \<span> tags including a class 
 "year". If the properties were not present, no additional strings were added. 
 
-Next, the closing </p> tag is concatenated to the string in stringTemp. Lastly, I inserted the string in 
-the stringTemp variable into the element labeled `quote-box` using .getElementById().innerHTML and 
+Next, the closing \</p> tag is concatenated to the string in stringTemp. Lastly, I inserted the string in 
+the stringTemp variable into the element labeled \`quote-box\` using .getElementById().innerHTML and 
 closed the printQuote() function.
 
 Next, I called the printQuote() function. 
