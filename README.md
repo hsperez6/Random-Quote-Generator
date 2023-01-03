@@ -2,10 +2,12 @@
 Random Quote Generator
 
 quotes array
+
 In this project, I first created an array of objects and saved it to a variable called quotes. 
 Each object contains several properties, including quote, source, citation, year, and tag.
 
 getRandomQuote function
+
 Secondly, I created a function called getRandomQuote() to randomly select one of the objects within
 the quotes array. The getRandomQuote() function first generates a random index by multiplying
 a random number between 0 and 1 (Math.random()) and multiplying it by length of the quotes array.
@@ -13,6 +15,7 @@ Next, I converted the result into an integer using Math.floor() and saved it to 
 Finally, I instructed function to return object located in the ranInd index. 
 
 printQuote function
+
 Thirdly, I created a printQuote() function to generate a string using the quote selected by the
 getRandomQuote() function. To do so, I first saved the quote object selected by the getRandomQuote()
 function into a variable ranQuote. Second, I began a string using string interpolation, with <p> 
