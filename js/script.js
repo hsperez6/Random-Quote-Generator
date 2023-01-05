@@ -19,27 +19,27 @@ let quotes = [
     source: 'Aunt May',
     citation: 'Spider Man',
     year: 2000,
-    tag: 'Movies'
+    tag: '-Movies'
   },
   {
     quote: 'Say goodnight to the bad guy!',
     source: 'Tony Montana',
     citation: 'Scarface',
     year: 1983,
-    tag: 'Movies'
+    tag: '-Movies'
   },
   {
     quote: 'Don\'t think, just do.',
     source: 'Pete "Maverick" Mitchell',
     citation: 'Top Gun',
     year: 1985,
-    tag: 'Movies'
+    tag: '-Movies'
   },
   {
     quote: 'If you spend too much time thinking about a thing, you\'ll never get it done',
     source: 'Bruce Lee',
     year: 1983,
-    tag: 'Wisdom'
+    tag: '-Wisdom'
 
   },
   {
@@ -47,26 +47,26 @@ let quotes = [
     source: 'Forrest Gump',
     citation: 'Forrest Gump',
     year: 1994,
-    tag: 'Movies'
+    tag: '-Movies'
   }, 
   {
     quote: 'He that would live in peace & ease, must not speak all he knows or judge all he sees.',
     source: 'Benjamin Franklin',
     citation: 'Poor Richard\'s Almanac',
     year: 1736,
-    tag: 'Wisdom'
+    tag: '-Wisdom'
   },
   {
     quote: 'No man has a good enough memory to be a successful liar.',
     source: 'Abraham Lincoln',
-    tag: 'Wisdom'
+    tag: '-Wisdom'
   }, 
   {
     quote: 'Stay hungry, stay foolish.',
     source: 'Steve Jobs',
     citation: 'Stanford University commencement address',
     year: 2005,
-    tag: 'Business'
+    tag: '-Business'
   } 
 ];
 
@@ -125,9 +125,21 @@ function printQuote() {
 
 
 /***
- * call printQuote() function 
+ * `changeBgColor` function
+ * generates a random color using hex and saves that color in variable randomColor
+ * applies the color stored in randomColor to the background  
+ ***/
+function changeBgColor() {
+  const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.background = randomColor;
+}
+
+/***
+ * setInterval method is used to automatically refresh the quote printed on the page every 5 seconds
+ * a second setInterval method is used to change the background color every 5 seconds
 ***/
-setinterval(printQuote(), 500);
+setInterval(printQuote, 5000)
+setInterval(changeBgColor, 5000);
 
 /***
  * click event listener for the print quote button
