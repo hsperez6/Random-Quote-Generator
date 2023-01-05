@@ -77,9 +77,9 @@ let quotes = [
  * generates a random index number 'ranInd' 
  * returns a random object from argument 'arr' using the random index number 'ranInd'
 ***/
-function getRandomQuote(arr) {
-  let ranInd = Math.floor(Math.random() * arr.length);
-  return arr[ranInd];
+function getRandomQuote(quotes) {
+  let ranInd = Math.floor(Math.random() * quotes.length);
+  return quotes[ranInd];
 }
 
 
